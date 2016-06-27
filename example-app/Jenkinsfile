@@ -17,6 +17,9 @@ catch(error) {
     // Properties not supported for some job types
 }
 
+vt.init('https://github.com/VentureTech/proteus-examples/', 'example-app')
+echo("IsSnapshot? ${vt.isSnapshot()}")
+echo("version -> ${vt.getVersion()}")
 node {
     try
     {
