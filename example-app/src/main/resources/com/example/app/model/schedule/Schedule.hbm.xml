@@ -16,7 +16,7 @@
 
 <hibernate-mapping>
     <typedef class="org.hibernate.type.EnumType" name="temporalDirectionType">
-        <param name="enumClass">com.lrlabs.model.activity.config.TemporalDirection</param>
+        <param name="enumClass">com.example.app.model.schedule.TemporalDirection</param>
         <param name="type">12<!-- Types.VARCHAR --></param>
     </typedef>
     <class name="com.example.app.model.schedule.Schedule" abstract="true" schema="app" batch-size="15">
