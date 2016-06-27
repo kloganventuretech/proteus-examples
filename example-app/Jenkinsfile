@@ -1,7 +1,7 @@
 
 def props = new net.proteusframework.Props()
 props.directory = 'example-app'
-props.projectURL = 'https://github.com/VentureTech/proteus-examples')
+props.projectURL = 'https://github.com/VentureTech/proteus-examples'
 
 vtInit {
     props = props
