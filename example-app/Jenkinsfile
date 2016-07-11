@@ -81,7 +81,8 @@ node {
               low: 'FUTURE', normal: 'TODO', pattern: 'src/**/*.java', unHealthy: ''])
 
     }
-    stash excludes: '**/compiletime-aspects/**,**/build/gradle/libs/*.war', name: 'example-app buildFiles'
+    //noinspection LongLine
+    stash excludes: '**/runtime-aspects/**,**/compiletime-aspects/**,**/build/gradle/libs/*,**/build/gradle/tmp/**/*,.idea/**/*, name: 'example-app buildFiles'
 }
 stage 'Tests In Parallel'
 parallel(["Unit Tests": {
